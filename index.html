@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <link rel = "icon" href = "images/ChatGPT_logo.png">
     <title>CSE 110 Lab 2 Discussion</title>
   </head>
@@ -88,17 +88,73 @@
 
       <section id="images">
         <h3>Images</h3>
-        <img src="images/alfa-romeo-giulia.jpg" alt="First gen ALFA giulia">
+        <h4>A very nice ALFA Romeo Giulia</h4>
+        <details>
+          <summary>Clicke here to view</summary>
+          <img src="images/alfa-romeo-giulia.jpg" alt="First gen ALFA giulia">
+        </details>
       </section>
 
       <section id="audio">
         <h3>Audio/Video</h3>
+        <h4>Bebe Rexha - Ferrari</h4>
         <audio src="audios/Bebe_Rexha_-_Ferrari_Olagist.co_.mp3" controls></audio>
+        <h4>Uncle Roger visiting SD</h4>
+        <video controls>
+          <source src="videoes/uncleroger.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section>
+        <h4>Please fill this Survey</h4>
+        <form action="submit-form" method="post">
+          <fieldset>
+            <legend>Survey:</legend>
+            <label>Name:</label>
+            <input type="text" required>
+            <br>
+
+            <label>Email:</label>
+            <input type="email" required>
+            <br>
+        
+            <label>What is your favorite car brand:</label>
+            <textarea id="message" required></textarea>
+            <br>
+
+            <label>Choose a car brand:</label>
+            <input list="car-options" required>
+
+            <datalist id="car-options">
+              <option value="Mercedes Benz">
+              <option value="BMW">
+              <option value="AUDI">
+              <option value="ALFA Romeo">
+              <option value="Jaguar">
+              <option value="Lexus">
+            </datalist>
+            <br>
+          
+            <label>Do you drive:</label>
+            <select required>
+              <option value = "">Select an Option</option>
+              <option value = "True">Yes</option>
+              <option value = "False">No</option>
+            </select>
+            <br>
+
+            <label>Date:</label>
+            <input type="date" required>
+            <br>
+
+            <button>Submit</button>
+          </fieldset>
+        </form>
       </section>
     </main>
 
     <footer>
-        Footer dummy
+        Made by Bill Xie for CSE110 Lab2
     </footer>
   </body>
 </html>
